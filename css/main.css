@@ -2056,7 +2056,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f5ff78;
+  background: #11a7c8;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3117,6 +3117,9 @@ header.post-header {
 }
 .menu .menu-item br {
   display: none;
+}
+.site-author-image {
+  height: 126px !important;
 }
 .menu-item-active a:after {
   content: " ";
