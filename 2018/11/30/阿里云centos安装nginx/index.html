@@ -108,18 +108,18 @@
 
 
 
-<meta name="description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境  因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装">
+<meta name="description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境 因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装：">
 <meta name="keywords" content="liunx">
 <meta property="og:type" content="article">
 <meta property="og:title" content="阿里云centos安装nginx">
 <meta property="og:url" content="https://185.199.111.153/2018/11/30/阿里云centos安装nginx/index.html">
 <meta property="og:site_name" content="ketaoonline">
-<meta property="og:description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境  因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装">
+<meta property="og:description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境 因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装：">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-30T03:14:50.841Z">
+<meta property="og:updated_time" content="2018-11-30T03:17:12.896Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="阿里云centos安装nginx">
-<meta name="twitter:description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境  因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装">
+<meta name="twitter:description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境 因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装：">
 
 
 
@@ -407,15 +407,14 @@
       
         <p>nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。</p>
 <ul>
-<li><p>C语言编译环境</p>
-<ul>
-<li><p>因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装：</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">安装make</span><br><span class="line">yum -y install gcc automake autoconf libtool make</span><br><span class="line"></span><br><span class="line">然后安装gcc</span><br><span class="line">yum install gcc gcc-c++</span><br></pre></td></tr></table></figure>
-</li>
+<li>C语言编译环境<ul>
+<li>因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装：</li>
 </ul>
 </li>
-<li><p>PCRE库</p>
-</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">安装make</span><br><span class="line">yum -y install gcc automake autoconf libtool make</span><br><span class="line">		</span><br><span class="line">然后安装gcc</span><br><span class="line">yum install gcc gcc-c++</span><br></pre></td></tr></table></figure>
+<ul>
+<li>PCRE库</li>
 </ul>
 <p>nginx需要PCRE库，因为nginx的rewrite模块和http核心模块需要使用到PCRE正则表达式语法，可通过yum安装</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install pcre pcre-devel</span><br></pre></td></tr></table></figure>
