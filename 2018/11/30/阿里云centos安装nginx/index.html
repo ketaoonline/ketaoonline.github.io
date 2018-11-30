@@ -97,7 +97,7 @@
 
 
 
-  <meta name="keywords" content="KT">
+  <meta name="keywords" content="liunx,">
 
 
 
@@ -108,14 +108,18 @@
 
 
 
+<meta name="description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境  因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装">
+<meta name="keywords" content="liunx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="后端防止表单重复提交">
-<meta property="og:url" content="https://185.199.111.153/2018/11/26/后端防止表单重复提交/index.html">
+<meta property="og:title" content="阿里云centos安装nginx">
+<meta property="og:url" content="https://185.199.111.153/2018/11/30/阿里云centos安装nginx/index.html">
 <meta property="og:site_name" content="ketaoonline">
+<meta property="og:description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境  因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-26T02:05:24.263Z">
+<meta property="og:updated_time" content="2018-11-30T03:14:50.841Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="后端防止表单重复提交">
+<meta name="twitter:title" content="阿里云centos安装nginx">
+<meta name="twitter:description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境  因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装">
 
 
 
@@ -145,13 +149,13 @@
 
 
 
-  <link rel="canonical" href="https://185.199.111.153/2018/11/26/后端防止表单重复提交/">
+  <link rel="canonical" href="https://185.199.111.153/2018/11/30/阿里云centos安装nginx/">
 
 
 
 
 
-  <title>后端防止表单重复提交 | ketaoonline</title>
+  <title>阿里云centos安装nginx | ketaoonline</title>
   
 
 
@@ -288,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://185.199.111.153/2018/11/26/后端防止表单重复提交/">
+    <link itemprop="mainEntityOfPage" href="https://185.199.111.153/2018/11/30/阿里云centos安装nginx/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="KT">
@@ -305,7 +309,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">后端防止表单重复提交</h2>
+          <h2 class="post-title" itemprop="name headline">阿里云centos安装nginx</h2>
         
 
         <div class="post-meta">
@@ -317,8 +321,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-26T10:05:24+08:00">
-                2018-11-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-30T10:55:02+08:00">
+                2018-11-30
               </time>
             
 
@@ -336,8 +340,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/26/后端防止表单重复提交/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/26/后端防止表单重复提交/" itemprop="commentCount"></span>
+                <a href="/2018/11/30/阿里云centos安装nginx/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/30/阿里云centos安装nginx/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -401,7 +405,45 @@
       
 
       
-        
+        <p>nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。</p>
+<ul>
+<li><p>C语言编译环境</p>
+<ul>
+<li><p>因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">安装make</span><br><span class="line">yum -y install gcc automake autoconf libtool make</span><br><span class="line"></span><br><span class="line">然后安装gcc</span><br><span class="line">yum install gcc gcc-c++</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>PCRE库</p>
+</li>
+</ul>
+<p>nginx需要PCRE库，因为nginx的rewrite模块和http核心模块需要使用到PCRE正则表达式语法，可通过yum安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install pcre pcre-devel</span><br></pre></td></tr></table></figure>
+<ul>
+<li>zlib库</li>
+</ul>
+<p>zlib库提供了压缩算法，nginx很多地方需要用到gzip算法，通过yum安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install zlib zlib-devel</span><br></pre></td></tr></table></figure>
+<ul>
+<li>OpenSSL</li>
+</ul>
+<p>nginx中如果服务需要提供安全页面，就需要用OpenSSL库，通过yum安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install openssl openssl-devel</span><br></pre></td></tr></table></figure>
+<ul>
+<li>下载nginx</li>
+</ul>
+<p>nginx源码从官网下载(<a href="">http://nginx.org/en/download.html</a>)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget  https://nginx.org/download/nginx-1.10.1.tar.gz</span><br><span class="line">tar zxf nginx-1.10.1.tar.gz</span><br><span class="line"><span class="built_in">cd</span> nginx-1.10.1/</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装nginx</li>
+</ul>
+<p>在安装之前需要进行配置,这也是linux下安装软件的常见步骤。初次安装可以直接使用configure脚本,如果有需要可以设置开关选项开启需要的功能模块</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<ul>
+<li>运行nginx</li>
+</ul>
+<p>nginx默认会安装在/usr/local/nginx目录，切换到该目录下，直接运行nginx的二进制可执行文件，运行成功后访问该服务器的ip地址就可以了</p>
+
       
     </div>
     
@@ -445,6 +487,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/liunx/" rel="tag"># liunx</a>
+          
+        </div>
+      
 
       
       
@@ -454,8 +502,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/23/tp5访问nginx404解决方案/" rel="next" title="tp5访问nginx404解决方案">
-                <i class="fa fa-chevron-left"></i> tp5访问nginx404解决方案
+              <a href="/2018/11/26/后端防止表单重复提交/" rel="next" title="后端防止表单重复提交">
+                <i class="fa fa-chevron-left"></i> 后端防止表单重复提交
               </a>
             
           </div>
@@ -463,10 +511,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/30/阿里云centos安装nginx/" rel="prev" title="阿里云centos安装nginx">
-                阿里云centos安装nginx <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -797,9 +841,9 @@ var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://185.199.111.153/2018/11/26/后端防止表单重复提交/';
-          this.page.identifier = '2018/11/26/后端防止表单重复提交/';
-          this.page.title = '后端防止表单重复提交';
+          this.page.url = 'https://185.199.111.153/2018/11/30/阿里云centos安装nginx/';
+          this.page.identifier = '2018/11/30/阿里云centos安装nginx/';
+          this.page.title = '阿里云centos安装nginx';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
