@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="ketaoonline">
 <meta property="og:description" content="权限身份 拥有者（Owner） 用户组（Group） 其他（Others）  修改文件权限 chgrp（change group）：修改文件所属用户组 chgrp [R] dirname/filename   chown(change owner)：修改文件拥有者 chown [R] 账号名称 文件或目录    chmod：修改文件的权限 数字类型修改文件权限 r:4 w:2 x:1 eg: ch">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-05T08:01:28.600Z">
+<meta property="og:updated_time" content="2018-12-05T08:10:42.343Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux文件权限管理">
 <meta name="twitter:description" content="权限身份 拥有者（Owner） 用户组（Group） 其他（Others）  修改文件权限 chgrp（change group）：修改文件所属用户组 chgrp [R] dirname/filename   chown(change owner)：修改文件拥有者 chown [R] 账号名称 文件或目录    chmod：修改文件的权限 数字类型修改文件权限 r:4 w:2 x:1 eg: ch">
@@ -431,7 +431,47 @@
 </ul>
 </li>
 </ul>
-<p>关键字|身份         | 操作     | 权限 | 权限<br>|—-|————| ——- | —- | —<br>chmod|u（<em>user</em>）  | +(加入)  | r    | 文件或目录<br>|    |g(<em>group</em>)  | -（移除） | w   |<br>|    |o(<em>others</em>) | =（设置） | x   |<br>|    |a(<em>all</em>)    | | </p>
+<table>
+<thead>
+<tr>
+<th>关键字</th>
+<th>身份</th>
+<th>操作</th>
+<th>权限</th>
+<th>权限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>chmod</td>
+<td>u（<em>user</em>）</td>
+<td>+(加入)</td>
+<td>r</td>
+<td>文件或目录</td>
+</tr>
+<tr>
+<td></td>
+<td>g(<em>group</em>)</td>
+<td>-（移除）</td>
+<td>w</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>o(<em>others</em>)</td>
+<td>=（设置）</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>a(<em>all</em>)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <blockquote>
 <ul>
 <li>设置test的权限为-rwxr-xr-x</li>
