@@ -97,7 +97,7 @@
 
 
 
-  <meta name="keywords" content="liunx,">
+  <meta name="keywords" content="前端,">
 
 
 
@@ -108,18 +108,18 @@
 
 
 
-<meta name="description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境 因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装：">
-<meta name="keywords" content="liunx">
+<meta name="description" content="单个属性监视watchvue中watch用于监视某个属性，当属性改变时做出相应的行为，而v-model只能同步数据，不能做出行为。 通常情况下，watch智能监视普通数据类型的属性，而不能监视复杂数据类型（如{student:[{‘name’:’jack’}]}），原因则是因为watch监视的本质其实是监视数据的在内存中的地址，如果只单纯的修改了复杂数据类型中某个属性的值，那么该数组实际在内存中的">
+<meta name="keywords" content="前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="阿里云centos安装nginx">
-<meta property="og:url" content="https://185.199.111.153/2018/11/30/阿里云centos安装nginx/index.html">
+<meta property="og:title" content="vue监视属性">
+<meta property="og:url" content="https://185.199.111.153/2018/12/08/vue-watch监视/index.html">
 <meta property="og:site_name" content="ketaoonline">
-<meta property="og:description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境 因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装：">
+<meta property="og:description" content="单个属性监视watchvue中watch用于监视某个属性，当属性改变时做出相应的行为，而v-model只能同步数据，不能做出行为。 通常情况下，watch智能监视普通数据类型的属性，而不能监视复杂数据类型（如{student:[{‘name’:’jack’}]}），原因则是因为watch监视的本质其实是监视数据的在内存中的地址，如果只单纯的修改了复杂数据类型中某个属性的值，那么该数组实际在内存中的">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-03T01:14:10.927Z">
+<meta property="og:updated_time" content="2018-12-11T07:50:17.769Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿里云centos安装nginx">
-<meta name="twitter:description" content="nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。  C语言编译环境 因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装：">
+<meta name="twitter:title" content="vue监视属性">
+<meta name="twitter:description" content="单个属性监视watchvue中watch用于监视某个属性，当属性改变时做出相应的行为，而v-model只能同步数据，不能做出行为。 通常情况下，watch智能监视普通数据类型的属性，而不能监视复杂数据类型（如{student:[{‘name’:’jack’}]}），原因则是因为watch监视的本质其实是监视数据的在内存中的地址，如果只单纯的修改了复杂数据类型中某个属性的值，那么该数组实际在内存中的">
 
 
 
@@ -149,13 +149,13 @@
 
 
 
-  <link rel="canonical" href="https://185.199.111.153/2018/11/30/阿里云centos安装nginx/">
+  <link rel="canonical" href="https://185.199.111.153/2018/12/08/vue-watch监视/">
 
 
 
 
 
-  <title>阿里云centos安装nginx | ketaoonline</title>
+  <title>vue监视属性 | ketaoonline</title>
   
 
 
@@ -292,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://185.199.111.153/2018/11/30/阿里云centos安装nginx/">
+    <link itemprop="mainEntityOfPage" href="https://185.199.111.153/2018/12/08/vue-watch监视/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="KT">
@@ -309,7 +309,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">阿里云centos安装nginx</h2>
+          <h2 class="post-title" itemprop="name headline">vue监视属性</h2>
         
 
         <div class="post-meta">
@@ -321,8 +321,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-30T10:55:02+08:00">
-                2018-11-30
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-08T14:08:07+08:00">
+                2018-12-08
               </time>
             
 
@@ -340,8 +340,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/30/阿里云centos安装nginx/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/30/阿里云centos安装nginx/" itemprop="commentCount"></span>
+                <a href="/2018/12/08/vue-watch监视/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/08/vue-watch监视/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -405,44 +405,11 @@
       
 
       
-        <p>nginx是一款轻量级的HTTP和反向代理服务器，相比于apache等，它具有占有内存少、并发能力强、稳定性高等优势。它最常见的用途就是提供反向代理服务。在linux系统下我们需要下载nginx的源代码包并且手动编译，而不是用包管理工具安装。</p>
-<ul>
-<li>C语言编译环境<ul>
-<li>因为nginx是C语言编写的，所以需要安装C语言编译环境。通常情况下，大多数的linux都会默认安装FCC，如果没有可以使用如下命令安装：</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">安装make</span><br><span class="line">yum -y install gcc automake autoconf libtool make</span><br><span class="line">		</span><br><span class="line">然后安装gcc</span><br><span class="line">yum install gcc gcc-c++</span><br></pre></td></tr></table></figure>
-<ul>
-<li>PCRE库</li>
-</ul>
-<p>nginx需要PCRE库，因为nginx的rewrite模块和http核心模块需要使用到PCRE正则表达式语法，可通过yum安装</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install pcre pcre-devel</span><br></pre></td></tr></table></figure>
-<ul>
-<li>zlib库</li>
-</ul>
-<p>zlib库提供了压缩算法，nginx很多地方需要用到gzip算法，通过yum安装</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install zlib zlib-devel</span><br></pre></td></tr></table></figure>
-<ul>
-<li>OpenSSL</li>
-</ul>
-<p>nginx中如果服务需要提供安全页面，就需要用OpenSSL库，通过yum安装</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install openssl openssl-devel</span><br></pre></td></tr></table></figure>
-<ul>
-<li>下载nginx</li>
-</ul>
-<p>nginx源码从官网下载(<a href="">http://nginx.org/en/download.html</a>)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget  https://nginx.org/download/nginx-1.10.1.tar.gz</span><br><span class="line">tar zxf nginx-1.10.1.tar.gz</span><br><span class="line"><span class="built_in">cd</span> nginx-1.10.1/</span><br></pre></td></tr></table></figure>
-<ul>
-<li>安装nginx</li>
-</ul>
-<p>在安装之前需要进行配置,这也是linux下安装软件的常见步骤。初次安装可以直接使用configure脚本,如果有需要可以设置开关选项开启需要的功能模块</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
-<ul>
-<li>运行nginx</li>
-</ul>
-<p>nginx默认会安装在/usr/local/nginx目录，切换到该目录下，直接运行nginx的二进制可执行文件，运行成功后访问该服务器的ip地址就可以了</p>
-
+        <h3 id="单个属性监视watch"><a href="#单个属性监视watch" class="headerlink" title="单个属性监视watch"></a>单个属性监视watch</h3><p>vue中watch用于监视某个属性，当属性改变时做出相应的行为，而v-model只能同步数据，不能做出行为。</p>
+<p>通常情况下，watch智能监视普通数据类型的属性，而不能监视复杂数据类型（如{student:[{‘name’:’jack’}]}），原因则是因为watch监视的本质其实是监视数据的在内存中的地址，如果只单纯的修改了复杂数据类型中某个属性的值，那么该数组实际在内存中的地址并未改变，所以这种情况下并不能做到对复杂属性的监视。由此引入了“深度监视”</p>
+<p>深度监视：obj || array</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">watch: &#123;</span><br><span class="line">	student: &#123;</span><br><span class="line">		deep:<span class="literal">true</span>,</span><br><span class="line">		handler:<span class="keyword">function</span>(newValue,oldValue) &#123;</span><br><span class="line">			console.log(<span class="string">'监视成功'</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="计算属性监视-computed"><a href="#计算属性监视-computed" class="headerlink" title="计算属性监视 computed"></a>计算属性监视 computed</h3>
       
     </div>
     
@@ -488,7 +455,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/liunx/" rel="tag"># liunx</a>
+            <a href="/tags/前端/" rel="tag"># 前端</a>
           
         </div>
       
@@ -501,8 +468,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/26/后端防止表单重复提交/" rel="next" title="后端防止表单重复提交">
-                <i class="fa fa-chevron-left"></i> 后端防止表单重复提交
+              <a href="/2018/12/08/vue组件的生命周期/" rel="next" title="vue组件的生命周期">
+                <i class="fa fa-chevron-left"></i> vue组件的生命周期
               </a>
             
           </div>
@@ -510,10 +477,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/05/test/" rel="prev" title="Linux文件权限管理">
-                Linux文件权限管理 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -577,8 +540,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -632,6 +604,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#单个属性监视watch"><span class="nav-number">1.</span> <span class="nav-text">单个属性监视watch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算属性监视-computed"><span class="nav-number">2.</span> <span class="nav-text">计算属性监视 computed</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -844,9 +832,9 @@ var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://185.199.111.153/2018/11/30/阿里云centos安装nginx/';
-          this.page.identifier = '2018/11/30/阿里云centos安装nginx/';
-          this.page.title = '阿里云centos安装nginx';
+          this.page.url = 'https://185.199.111.153/2018/12/08/vue-watch监视/';
+          this.page.identifier = '2018/12/08/vue-watch监视/';
+          this.page.title = 'vue监视属性';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
