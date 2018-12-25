@@ -97,7 +97,7 @@
 
 
 
-  <meta name="keywords" content="php,">
+  <meta name="keywords" content="KT">
 
 
 
@@ -108,18 +108,14 @@
 
 
 
-<meta name="description" content="nginx + php 运行原理 nginx的worker进程直接管理每一个请求到nginx的网络请求  对于php而言，由于在整个网络请求的过程中php是一个cgi程序的角色，所以采用名为php-fpm的进程管理程序来对这些被请求的php程序进行管理，php-fpm也如同nginx一样，需要监听端口，并且有master和worker进程。worker进程直接管理每一个php进程   fastcg">
-<meta name="keywords" content="php">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nginx+php">
-<meta property="og:url" content="https://185.199.111.153/2018/11/20/nginx-php/index.html">
+<meta property="og:title" content="vue组件的生命周期">
+<meta property="og:url" content="https://185.199.111.153/2018/12/23/vue组件的生命周期-1/index.html">
 <meta property="og:site_name" content="ketaoonline">
-<meta property="og:description" content="nginx + php 运行原理 nginx的worker进程直接管理每一个请求到nginx的网络请求  对于php而言，由于在整个网络请求的过程中php是一个cgi程序的角色，所以采用名为php-fpm的进程管理程序来对这些被请求的php程序进行管理，php-fpm也如同nginx一样，需要监听端口，并且有master和worker进程。worker进程直接管理每一个php进程   fastcg">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-20T08:57:06.572Z">
+<meta property="og:updated_time" content="2018-12-23T08:24:24.267Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nginx+php">
-<meta name="twitter:description" content="nginx + php 运行原理 nginx的worker进程直接管理每一个请求到nginx的网络请求  对于php而言，由于在整个网络请求的过程中php是一个cgi程序的角色，所以采用名为php-fpm的进程管理程序来对这些被请求的php程序进行管理，php-fpm也如同nginx一样，需要监听端口，并且有master和worker进程。worker进程直接管理每一个php进程   fastcg">
+<meta name="twitter:title" content="vue组件的生命周期">
 
 
 
@@ -149,13 +145,13 @@
 
 
 
-  <link rel="canonical" href="https://185.199.111.153/2018/11/20/nginx-php/">
+  <link rel="canonical" href="https://185.199.111.153/2018/12/23/vue组件的生命周期-1/">
 
 
 
 
 
-  <title>nginx+php | ketaoonline</title>
+  <title>vue组件的生命周期 | ketaoonline</title>
   
 
 
@@ -292,7 +288,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://185.199.111.153/2018/11/20/nginx-php/">
+    <link itemprop="mainEntityOfPage" href="https://185.199.111.153/2018/12/23/vue组件的生命周期-1/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="KT">
@@ -309,7 +305,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">nginx+php</h2>
+          <h2 class="post-title" itemprop="name headline">vue组件的生命周期</h2>
         
 
         <div class="post-meta">
@@ -321,8 +317,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-20T09:14:09+08:00">
-                2018-11-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-23T16:24:24+08:00">
+                2018-12-23
               </time>
             
 
@@ -340,8 +336,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/20/nginx-php/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/11/20/nginx-php/" itemprop="commentCount"></span>
+                <a href="/2018/12/23/vue组件的生命周期-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/23/vue组件的生命周期-1/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -405,54 +401,7 @@
       
 
       
-        <h3 id="nginx-php-运行原理"><a href="#nginx-php-运行原理" class="headerlink" title="nginx + php 运行原理"></a>nginx + php 运行原理</h3><ul>
-<li><p>nginx的worker进程直接管理每一个请求到nginx的网络请求</p>
-</li>
-<li><p>对于php而言，由于在整个网络请求的过程中php是一个cgi程序的角色，所以采用名为php-fpm的进程管理程序来对这些被请求的php程序进行管理，php-fpm也如同nginx一样，需要监听端口，并且有master和worker进程。worker进程直接管理每一个php进程</p>
-</li>
-</ul>
-<h3 id="fastcgi"><a href="#fastcgi" class="headerlink" title="fastcgi"></a>fastcgi</h3><ul>
-<li><p>fastcgi是一种进程管理器，管理cgi进程，市面上有多种实现了fastcgi功能的进程管理器，php-fpm就是其中一个。php-fpm作为一种fastcgi进程管理服务，会监听端口，一般默认监听的9000端口，并且是监听本机，也就是只接收来自本季的端口请求。</p>
-</li>
-<li><p>fastcgi的配置:fastcgi的配置文件一般放在nginx.conf同级目录下，配置文件形式一般两种：fastcgi.conf和fastcgi_params。不同的nginx版本会有不同的配置文件，这两个配置文件有一个重要的区别</p>
-<blockquote>
-<p>fast_parames文件中缺少下列配置:</p>
-</blockquote>
-<blockquote>
-<ul>
-<li>fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>可以打开fastcgi_parames文件加上上述的配置，也可以在要使用配置的地方动态添加，使得该配置生效</p>
-</blockquote>
-</li>
-</ul>
-<blockquote>
-<p>总结： 当需要处理php请求的时候，nginx的worker会将请求移交给php-fpm的worker进行进程处理，也就是最开始说的nginx调用了php（其实是间接调用）</p>
-</blockquote>
-<h3 id="nginx配置文件"><a href="#nginx配置文件" class="headerlink" title="nginx配置文件"></a>nginx配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">server &#123;  </span><br><span class="line">    listen       8011;  </span><br><span class="line">    server_name  test.cn;  </span><br><span class="line">    location ~ \.php?.*$ &#123;  </span><br><span class="line">        root           /share/<span class="built_in">test</span>;  </span><br><span class="line">        fastcgi_pass   127.0.0.1:9000;  </span><br><span class="line">        fastcgi_param  SCRIPT_FILENAME  <span class="variable">$document_root</span><span class="variable">$fastcgi_script_name</span>;  </span><br><span class="line">        include        fastcgi_params;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>配置文件详解：</p>
-<ul>
-<li><p>server{}代表一个独立的server</p>
-</li>
-<li><p>listen:监听端口</p>
-</li>
-<li><p>location ~ .php?.*$ { } 代表一个能匹配对应uri的location，并对所匹配的uri请求做自定义的逻辑、配置。这里的location匹配了所有带.php的uri请求，</p>
-</li>
-<li><p>root /share/test：请求资源根目录，告诉匹配到该location下的uri到/share/test文件夹下去寻找同名资源。</p>
-</li>
-<li><p>fastcgi_pass:127.0.0.1:9000 将进入到该location内的uri请求看作cgi的程序，并将请求发送到9000端口，交由php-fpm处理</p>
-</li>
-<li><p>fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name; 动态添加了一行fastcgi配置，配置内容为SCRIPT_FILENAME，告知进程管理cgi脚本名称</p>
-<blockquote>
-<p>若nginx配置文件中只有fastcgi_parames文件，没有fastcgi.conf文件，要让php-fpm知道SCRIPT_FILENAME的具体值，就必须动态添加这行配置</p>
-</blockquote>
-</li>
-<li><p>inclue fastcgi_parames：引入fastcgi配置文件     </p>
-</li>
-</ul>
-
+        
       
     </div>
     
@@ -496,12 +445,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/php/" rel="tag"># php</a>
-          
-        </div>
-      
 
       
       
@@ -511,8 +454,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/13/学习安排/" rel="next" title="学习安排">
-                <i class="fa fa-chevron-left"></i> 学习安排
+              <a href="/2018/12/08/vue-watch监视/" rel="next" title="vue监视属性">
+                <i class="fa fa-chevron-left"></i> vue监视属性
               </a>
             
           </div>
@@ -520,10 +463,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/23/tp5控制器前置操作/" rel="prev" title="tp5控制器前置操作">
-                tp5控制器前置操作 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -587,17 +526,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -651,22 +581,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx-php-运行原理"><span class="nav-number">1.</span> <span class="nav-text">nginx + php 运行原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fastcgi"><span class="nav-number">2.</span> <span class="nav-text">fastcgi</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx配置文件"><span class="nav-number">3.</span> <span class="nav-text">nginx配置文件</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -879,9 +793,9 @@ var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://185.199.111.153/2018/11/20/nginx-php/';
-          this.page.identifier = '2018/11/20/nginx-php/';
-          this.page.title = 'nginx+php';
+          this.page.url = 'https://185.199.111.153/2018/12/23/vue组件的生命周期-1/';
+          this.page.identifier = '2018/12/23/vue组件的生命周期-1/';
+          this.page.title = 'vue组件的生命周期';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
