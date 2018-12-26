@@ -108,18 +108,18 @@
 
 
 
-<meta name="description" content="beforeCreate: 组件创建之前  created: 组件创建之后  使用该组件 ，就会触发以上事件函数（钩子函数），created 中可以操作数据，并且可以实现vue-&amp;gt;页面的影响，应用：发起ajax请求     beforeMount: vue起作用装载数据到dom之前  mounted: vue起作用装载数据到dom之后">
+<meta name="description" content="beforeCreate: 组件创建之前  created: 组件创建之后  使用该组件 ，就会触发以上事件函数（钩子函数），created 中可以操作数据，并且可以实现vue-&amp;gt;页面的影响，应用：发起ajax请求      beforeMount: vue起作用装载数据到dom之前  mounted: vue起作用装载数据到dom之后（只执行一次）     beforeUpdate: 改">
 <meta name="keywords" content="js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue组件的生命周期">
 <meta property="og:url" content="https://185.199.111.153/2018/12/08/vue组件的生命周期/index.html">
 <meta property="og:site_name" content="ketaoonline">
-<meta property="og:description" content="beforeCreate: 组件创建之前  created: 组件创建之后  使用该组件 ，就会触发以上事件函数（钩子函数），created 中可以操作数据，并且可以实现vue-&amp;gt;页面的影响，应用：发起ajax请求     beforeMount: vue起作用装载数据到dom之前  mounted: vue起作用装载数据到dom之后">
+<meta property="og:description" content="beforeCreate: 组件创建之前  created: 组件创建之后  使用该组件 ，就会触发以上事件函数（钩子函数），created 中可以操作数据，并且可以实现vue-&amp;gt;页面的影响，应用：发起ajax请求      beforeMount: vue起作用装载数据到dom之前  mounted: vue起作用装载数据到dom之后（只执行一次）     beforeUpdate: 改">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-24T05:34:19.566Z">
+<meta property="og:updated_time" content="2018-12-26T05:45:37.552Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue组件的生命周期">
-<meta name="twitter:description" content="beforeCreate: 组件创建之前  created: 组件创建之后  使用该组件 ，就会触发以上事件函数（钩子函数），created 中可以操作数据，并且可以实现vue-&amp;gt;页面的影响，应用：发起ajax请求     beforeMount: vue起作用装载数据到dom之前  mounted: vue起作用装载数据到dom之后">
+<meta name="twitter:description" content="beforeCreate: 组件创建之前  created: 组件创建之后  使用该组件 ，就会触发以上事件函数（钩子函数），created 中可以操作数据，并且可以实现vue-&amp;gt;页面的影响，应用：发起ajax请求      beforeMount: vue起作用装载数据到dom之前  mounted: vue起作用装载数据到dom之后（只执行一次）     beforeUpdate: 改">
 
 
 
@@ -414,12 +414,46 @@
 </blockquote>
 </li>
 </ul>
+<hr>
 <ul>
 <li><p>beforeMount: vue起作用装载数据到dom之前</p>
 </li>
-<li><p>mounted: vue起作用装载数据到dom之后</p>
+<li><p>mounted: vue起作用装载数据到dom之后（只执行一次）</p>
 </li>
 </ul>
+<hr>
+<ul>
+<li><p>beforeUpdate: 改变之前</p>
+</li>
+<li><p>updated:改变之后</p>
+<blockquote>
+<p>当有数据更改时触发</p>
+</blockquote>
+<blockquote>
+<p>基于数据改变影响页面</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>beforeDestroy:销毁之前</p>
+</li>
+<li><p>destroyed:销毁之后</p>
+<blockquote>
+<p>对应父组件v-if false就销毁组件<br>销毁最终都是做一些其他功能的施放 比如保存数据到localstorage等…</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>beforeActive: 组件停用</p>
+</li>
+<li><p>actived：组件激活</p>
+</li>
+</ul>
+<blockquote>
+<p>created和actived都是v-if=true子组件的状态<br>created没有被keep-alive内置组件包裹，actived被包裹了<br>销毁和停用同上</p>
+</blockquote>
 
       
     </div>
